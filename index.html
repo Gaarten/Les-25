@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <title>Les 25</title>
+
+    <script src="http://code.jquery.com/jquery-3.1.0.min.js">
+    </script>
+    <script src="http://code.jquery.com/ui/1.12.0/jquery-ui.min.js">
+    </script>
+    <link rel="stylesheet"
+    href="http://code.jquery.com/ui/1.12.0/themes/base/jquery-ui.css">
+    
+    <script type="text/javascript">
+    $(function() {
+    $("#accordion").accordion();
+    });
+    </script>
+
+    <script type="text/javascript">
+    $(document).ready(function() {
+    $("#knop").click(function() {
+    var beoordeling = $("#idTekstveld").val();
+    window.alert("Bedankt voor uw beoordeling: " + beoordeling);
+    });
+    });
+    </script>
+
+    <style>
+    #vraag {
+    font-family: Arial, Helvetica, sans-serif ;
+    }
+
+    div.figure {
+    float: left;
+    width: 30%;
+    border: thin silver solid;
+    margin: 0.5em;
+    padding: 0.5em;
+    }
+    div.figure p {
+    text-align: center;
+    font-style: italic;
+    font-size: smaller;
+    text-indent: 0;
+    }
+    img.scaled {
+    width: 100%;
+    }
+    
+    </style>
+</head>
+
+<body>
+    <div id="accordion">
+        <h3>Welkom</h3>
+            <div>
+            <p>Van harte welkom op deze website! Op deze website willen we u meenemen naar diverse schilders. Deze schilders zijn gekozen omdat ze mij vooral ook aanspreken. 
+                Ga naar de volgende tabbladen om hun werk te zien!
+            </p>
+            </div>
+
+        <h3>Henk Dekker</h3>
+            <div>
+            <p>Eerst verwijs ik u naar Henk Dekker. 
+               Hij schildert al heel lang. 
+               Dit doet hij naast zijn fulltime baan als docent. 
+               Hij krijgt veel opdrachten om te schilderen, maar daarnaast kiest hij zelf ook ontwerpen. 
+               Hierin heeft hij ook voor detail.  
+               Al jarenlang heb ik met veel plezier schilderles van Henk. 
+               Wilt u zijn werk zien? Kijk dan op <a href=https://atelierartofsilence.com>Art of Silence</a>.</p>
+                <div class="figure">
+                <p><img id="nummer1" src="winterberg.jpg" alt="winterlandschap" width="300" height="300"></p>
+                <p>Schilderij wat mij bijzonder aanspreekt</p>
+                </div>
+            
+            </div>
+
+        <h3>Henk Helmantel</h3>
+            <div>
+            <p>Een schilder waar ik echt fan van ben, is Henk Helmantel. 
+               Zijn stillevens zijn prachtig weergegeven en soms niet van echt te onderscheiden.
+               Het is zeker de moeite om zijn werken te bewonderen in het museum. 
+               Voor informatie verwijs ik u naar <a href=https://www.helmantel.nl>Henk Helmantel</a>
+            </p>
+            </div>
+
+        <h3>KORF</h3>
+            <div>
+            <p>KORF staat voor Kunstenaars op Reformatorisch Fundament. 
+               Op hun website <a href=https://www.korfinfo.nl>Korfinfo</a> kunt u zien wie daar bij aangesloten zijn. 
+               Veel van deze kunstenaars maken práchtige werken! 
+               Bij Korf zijn niet alleen schilders aangesloten, maar ook kunstenaars die met hout, of allerlei ander materiaal de mooiste dingen maken.
+               Soms zijn er ook exposities. Deze zijn dan op de website te vinden. 
+               Van harte aanbevolen!
+            </p>
+            </div>
+        </div>
+<br>
+<br>
+        <form>
+           <p id="vraag">Wat is uw beoordeling van deze site?
+            <input type="text" id="idTekstveld">
+            <input id="knop" name="knop" type="button"
+            value="Klik op deze knop">
+            </p>
+        </form>
+
+        <noscript>
+        Om deze website optimaal te gebruiken is het noodzakelijk om JavaScript te activeren.
+        </noscript>
+</body>
+</html>
